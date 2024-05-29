@@ -1,0 +1,1 @@
+<livewire:import-google-sheet :selectedRecord="$record"  wire:key="google-sheet-importer-{{ now() }}" />

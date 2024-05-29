@@ -1,0 +1,1 @@
+<img src="{{ url('storage/'. $getRecord()->image_1 ?? '') }}" alt="Image 1" class="w-full h-auto" />

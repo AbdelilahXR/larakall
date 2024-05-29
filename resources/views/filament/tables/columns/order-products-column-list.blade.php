@@ -1,0 +1,1 @@
+<livewire:order-products-column-list :selectedRecord="$getRecord()" wire:key="order-products-column-list-{{ $getRecord()->id }}-{{ now() }}" />

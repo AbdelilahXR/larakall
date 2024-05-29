@@ -1,0 +1,1 @@
+<livewire:adding-order-handler :selectedRecord="$getRecord()" wire:key="adding-order-handler-{{ $getRecord()->id }}-{{ now() }}" />

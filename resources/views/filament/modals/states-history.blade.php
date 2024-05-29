@@ -1,0 +1,1 @@
+<livewire:states-history :selectedRecord="$record" wire:key="states-history-{{ $record }}-{{ now() }}" />

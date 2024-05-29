@@ -1,0 +1,1 @@
+<livewire:status-switcher :selectedRecord="$getRecord()" :type="$type" wire:key="status-switcher-{{ $getRecord()->id }}-{{ now() }}" />
