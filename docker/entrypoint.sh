@@ -15,8 +15,6 @@ fi
 echo "=== Step 2: Installing npm packages and building ==="
 npm install && npm run build
 
-echo "=== Step 3: Copying .env.example to .env ==="
-cp .env.example .env
 
 echo "=== Step 4: Generating application key ==="
 php artisan key:generate
