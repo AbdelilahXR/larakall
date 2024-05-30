@@ -23,7 +23,14 @@ FROM node:20-alpine as node
 WORKDIR /var/www
 COPY . .
 
-RUN npm install --global cross-env
+# Set npm registry and retry mechanism
+RUN npm config set registry https://registry.npmjs.org/ && \
+    npm config set fetch-retries 5 && \
+    npm config set fetch-retry-mintimeout 20000 && \
+    npm config set fetch-retry-maxtimeout 120000
+
+# Install cross-env with retry mechanism
+RUN npm install --global cross-env || npm install --global cross-env
 RUN npm install
 
-VOLUME /var/www/node_modules
+VOLUME /var/www/node_modules 
