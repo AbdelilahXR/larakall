@@ -24,10 +24,10 @@ WORKDIR /var/www
 COPY . .
 
 # Set npm registry and retry mechanism
-RUN npm config set registry https://registry.npmjs.org/ && \
-    npm config set fetch-retries 5 && \
-    npm config set fetch-retry-mintimeout 20000 && \
-    npm config set fetch-retry-maxtimeout 120000
+# RUN npm config set registry https://registry.npmjs.org/ && \
+#     npm config set fetch-retries 5 && \
+#     npm config set fetch-retry-mintimeout 20000 && \
+#     npm config set fetch-retry-maxtimeout 120000
 
 # Install cross-env with retry mechanism
 #RUN npm install --global cross-env || npm install --global cross-env
