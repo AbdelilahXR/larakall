@@ -30,7 +30,7 @@ RUN npm config set registry https://registry.npmjs.org/ && \
     npm config set fetch-retry-maxtimeout 120000
 
 # Install cross-env with retry mechanism
-RUN npm install --global cross-env || npm install --global cross-env
+#RUN npm install --global cross-env || npm install --global cross-env
 RUN npm install
 
 VOLUME /var/www/node_modules 
